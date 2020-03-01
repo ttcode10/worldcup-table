@@ -69,9 +69,13 @@ const Homepage = () => {
           break;
         case 'homeRed':
           matchToChange.homeRed++;
+          msg = <span>{currentMatchHome} 红牌 + 1</span>
+          message.success(msg, 5);
           break;
         case 'homeYellow':
           matchToChange.homeYellow++;
+          msg = <span>{currentMatchHome} 黄牌 + 1</span>
+          message.success(msg, 5);
           break;
         case 'guestScore':
           matchToChange.guestScore++;
@@ -80,9 +84,13 @@ const Homepage = () => {
           break;
         case 'guestRed':
           matchToChange.guestRed++;
+          msg = <span>{currentMatchGuest} 红牌 + 1</span>
+          message.success(msg, 5);
           break;
         case 'guestYellow':
           matchToChange.guestYellow++;
+          msg = <span>{currentMatchGuest} 黄牌 + 1</span>
+          message.success(msg, 5);
           break;
       }
 
